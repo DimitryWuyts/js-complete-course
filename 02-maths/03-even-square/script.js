@@ -14,5 +14,4 @@
 
         for(i = 1; i < 21; i++) {
             alert(Math.sqrt(i));
-            console.log(i);
         }});
