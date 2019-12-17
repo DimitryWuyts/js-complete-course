@@ -11,6 +11,11 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function getRandomColor(){
 
+        let color = ("hsl(" + Math.round((Math.random()*360)) + ", " + Math.round((Math.random()*100)) + "% ," + Math.round((Math.random()*100)) + "%)");
+
+        document.body.style.backgroundColor = color;
+    })
 })();
+
