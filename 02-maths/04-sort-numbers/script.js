@@ -11,12 +11,11 @@
 
 (function() {
 
-    // to get the value of an input: document.getElementById("element-id").value
-
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
+        let sort = document.getElementById("numbers").value;
+        let newArray = sort.split(', ');
+        let sortedArray = newArray.sort((a, b) => {return a-b;});
+        alert(sortedArray);
     });
 
 })();
