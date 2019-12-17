@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    if i%15 == 0 {
+        print("fizzbuzz")
+    }
 
+    else if i%3 == 0{
+        print("fizz")
+    }
+    else if i%5 == 0 {
+        print("buzz")
+    }
+    print(i)
 })();
