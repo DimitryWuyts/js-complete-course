@@ -9,17 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    if i%15 == 0 {
-        print("fizzbuzz")
+for(var i = 1;i<=100;i++)
+{
+
+    if((i%5 === 0)&&(i%3 === 0))
+    {
+        console.log("FizzBuzz");
+        continue;
+    }
+    else if(i%5 === 0)
+    {
+        console.log("Buzz");
+    }
+    else if((i%3 === 0))
+    {
+        console.log("Fizz");
+    }
+    else{
+        console.log(i);
     }
 
-    else if i%3 == 0{
-        print("fizz")
-    }
-    else if i%5 == 0 {
-        print("buzz")
-    }
-    print(i)
-})();
+}
