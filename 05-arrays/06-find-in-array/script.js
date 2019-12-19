@@ -92,7 +92,7 @@
 //button
     document.getElementById("run").addEventListener("click", function(){
 
-        let post = people.find(post => {
+        let postIt = people.find(post => {
 
             //console log
             console.log(post.email)
