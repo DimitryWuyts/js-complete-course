@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        let a = document.getElementById("year").value;
+        let marks = "";
+// var for months
+        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//---
+        for (m = 0; m < 12; m++){
+            let years = new Date(a, m, 13);
+            if (years.getDay() === 5){
+                marks += months[years.getMonth()] + "\n";
+            }
+
+        }
+// alert
+        alert(marks);
+
+
+    })
 
 })();
