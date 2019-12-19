@@ -33,7 +33,6 @@
     //console log
             console.log(element);
         })
-
     })
 
 })();
