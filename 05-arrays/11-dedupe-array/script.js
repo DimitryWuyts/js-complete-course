@@ -28,6 +28,12 @@
         "cerise",
     ];
 
-    // your code here
+    //button
+    document.getElementById("run").addEventListener("click", function () {
 
+        let oneTime = [...new Set(fruits)];
+
+        //console log
+        console.log(oneTime);
+    })
 })();
