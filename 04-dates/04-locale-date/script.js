@@ -10,9 +10,36 @@
 // You will have time to focus on it later.
 
 (function() {
+//var for months and days
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+        "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//---
+    function showDay(dt) {
+        return days[dt.getDay()];
+    }
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    dt = new Date();
 
-    // your code here
+    let showday = showDay(dt);
+
+    function showMonths(md){
+        return months[md.getMonth()];
+    }
+    md = new Date();
+    let whatYear = new Date().getFullYear();
+
+    let whatMonth = showMonths(md);
+
+    let whatDay = new Date().getDate();
+
+    let whatHour = new Date().getHours();
+
+    let whatMinute = new Date().getMinutes();
+
+    let whatSecond = new Date().getSeconds();
+
+    document.getElementById("target").innerHTML =
+        showday + " " + whatDay +  " " + whatMonth + " " +  whatYear + ", "  + whatHour + ":" + whatMinute + ":" + whatSecond;
 
 })();
