@@ -26,6 +26,18 @@
         "cherry",
     ];
 
-    // your code here
+    //button
+    document.getElementById("run").addEventListener("click", function () {
+        //variable(s)
+        let results = fruits.includes('apple');
+        //if statement
+        if (results == true){
+            console.log("Yes");
+        }
+        else {
+            //console log
+            console.log("No");
+        }
+    })
 
 })();
