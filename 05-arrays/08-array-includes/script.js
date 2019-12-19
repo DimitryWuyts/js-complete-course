@@ -32,6 +32,7 @@
         let results = fruits.includes('apple');
         //if statement
         if (results == true){
+            //console log
             console.log("Yes");
         }
         else {
