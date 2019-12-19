@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -23,7 +23,18 @@
         "raisin",
         "cerise",
     ];
+// button
+    document.getElementById("run").addEventListener("click", function () {
 
-    // your code here
+//array items
+
+        fruits[0] = "banana";
+        fruits[9] = "kiwi";
+
+//alert
+
+        alert(fruits)
+
+    })
 
 })();
