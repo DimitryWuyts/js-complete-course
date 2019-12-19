@@ -89,6 +89,19 @@
         },
     ];
 
-    // your code here
+//button
+    document.getElementById("run").addEventListener("click", function(){
+
+        let post = people.find(post => {
+
+            //console log
+            console.log(post.email)
+            if (post.lastname === "Dupont" && post.firstname === "Jean"){
+                return true;
+            }
+            else
+
+            return false;
+        })});
 
 })();
