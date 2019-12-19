@@ -39,6 +39,14 @@
         },
     ];
 
-    // your code here
+    //button
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(function(el){
+
+            //console log
+
+            console.log(el.firstname,el.lastname);
+        });
+    })
 
 })();
