@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+    let counter = document.getElementById("counter");
+    let passOne = document.getElementById("pass-one");
 
+    passOne.setAttribute("maxlength", 10);
+
+    let total = 0;
+
+    passOne.addEventListener("input", function () {
+
+        total = passOne.value.length;
+        counter.innerHTML = total +"/10";
+    })
 })();
