@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+    let passWord1 = document.getElementById("pass-one").value;
+    let passWord2 = document.getElementById("pass-two").value;
+
+    if(passWord1 !== passWord2){
+        alert("error, passwords do not match")
+    }
+    else {
+        alert("Passwords match");
+    }
+})
 
 })();
