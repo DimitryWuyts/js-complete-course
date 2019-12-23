@@ -34,6 +34,8 @@
         if ((inputTotal >= 8) && (number >= 2)) {
             validity.innerHTML = "Ok";
         }
+        else
+            validity.innerHTML = "Not Ok";
     });
 
 })();
