@@ -22,8 +22,8 @@
 
         for (let b = 1; b < 11; b++){
             let cel = document.createElement("td");
-            let inhoud = document.createTextNode(" " + i*b);
-            cel.appendChild(inhoud);
+            let content = document.createTextNode(" " + i*b);
+            cel.appendChild(content);
             row.appendChild(cel);
         }
         table.appendChild(row);
