@@ -13,7 +13,7 @@
 
     //var images
 
-    let gallery= [
+    let gallery = [
         "../../_shared/img/map.svg",
         "../../_shared/img/compass.svg",
         "../../_shared/img/clock.svg",
