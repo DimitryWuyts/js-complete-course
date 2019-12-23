@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
-
+    let parent = document.querySelector(".material");
+    let child = parent.querySelectorAll(".target");
+    let a;
+    for (a = 0; a < child.length; a++){
+        child[a].innerHTML = "owned";
+    }
 })();
