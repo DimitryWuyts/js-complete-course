@@ -17,6 +17,8 @@
     let passWord2 = document.getElementById("pass-two").value;
 
     if(passWord1 !== passWord2){
+        document.getElementById("pass-one").classname = "error";
+        document.getElementById("pass-two").classname = "error";
         alert("error, passwords do not match")
     }
     else {
