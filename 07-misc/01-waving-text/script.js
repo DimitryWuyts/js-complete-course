@@ -11,22 +11,34 @@
 
 
 (function() {
-    var wave = document.getElementById("target").innerHTML;
-    console.log(wave)
-    var myText = "";
-    var textSizes = [14, 16, 18, 20, 22, 24, 26, 24, 22, 20, 18, 16, 14];
 
-    for (var i = 0; i < wave.length; i++) {
-        if (wave[i] != " ")
-            myText +=
-                '<span style="font-size:' +
-                textSizes[i % 9] +
-                'px;">' +
-                wave[i] +
-                "</span>";
-        else myText += " ";
+    // your code here
+    var target = document.getElementById("target").innerText;
+    var sizes = [12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32];
+    var i = 0;
+
+    function changeSize(){
+        document.getElementById("target").innerText = "";
+        target.split("").forEach(function(letter){
+            var span = document.createElement("span");
+            span.style.fontSize = sizes[i] + "px";
+            span.innerText = letter;
+            document.getElementById('target').appendChild(span);
+
+            if(letter !== ''){
+                i++;
+            }
+
+            if(i === sizes.length-1){
+                i = 0;
+                sizes.reverse();
+            }
+        })
     }
-    document.getElementById("target").innerHTML = myText;
-})();
 
+    changeSize();
+
+    setInterval(changeSize, 100);
+
+})();
 
