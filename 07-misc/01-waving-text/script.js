@@ -12,7 +12,6 @@
 
 (function() {
 
-    // your code here
     var target = document.getElementById("target").innerText;
     var sizes = [12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32];
     var i = 0;
@@ -33,12 +32,16 @@
                 i = 0;
                 sizes.reverse();
             }
+
         })
+
     }
+
 
     changeSize();
 
-    setInterval(changeSize, 100);
+    setInterval(changeSize, 200);
+
 
 })();
 
