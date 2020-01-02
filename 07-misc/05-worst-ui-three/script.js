@@ -11,6 +11,30 @@
 
 (function() {
 
-    // your code here
 
+    document.getElementById("target").innerText = "460000000";
+    var button = document.querySelectorAll("button");
+
+
+        button.forEach((button) => {
+        button.addEventListener('click', () => {
+
+            var input = button.previousSibling.previousSibling;
+            var max = Number(input.getAttribute("data-max"));
+            var min = Number(input.getAttribute("data-min"));
+            var math = Math.floor(Math.random() * (max - min + 1)) + min ;
+
+            input.value = math;
+            if (math < 10){
+             input.value = "0" + math;
+            }
+
+            var one = document.getElementById("part-one").value;
+            var two = document.getElementById("part-two").value;
+            var three = document.getElementById("part-three").value;
+            var four = document.getElementById("part-four").value;
+
+            document.getElementById("target").innerHTML = one + two + three + four ;
+        });
+    });
 })();
