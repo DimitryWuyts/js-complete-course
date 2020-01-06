@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    fetch("http://localhost:63342/js-complete-course/_shared/api.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+
+            console.log(data.heroes);
+
+            var array = data.heroes;
+
+            document.getElementById("run").addEventListener("click", function(){
+
+
+                var input = document.getElementById("hero-id").value;
+
+                array.splice(input-1,1);
+
+                console.log(data.heroes);
+
+            })
+        })
+
 })();
